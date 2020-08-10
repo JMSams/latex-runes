@@ -11,7 +11,7 @@ with open("unicoderunes.sty", "w") as f:
 	
 	for rune, tex in runes:
 		f.write("\\newunicodechar{{{0}}}{{\\textarn{{{1}}}}}\n".format(rune, tex))
-	f.write("\n\n\\newcommand{\\allrunes}{")
+	f.write("\n\n\\newcommand{\\testallrunes}{")
 	for rune, tex in runes:
 		f.write(rune)
 	f.write("}\n")
